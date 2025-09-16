@@ -1,9 +1,0 @@
-wwwroot\competenze.html
-wwwroot\css\style.css
-wwwroot\images\.gitkeep
-wwwroot\images\MariaAmbrosio.jpg
-wwwroot\index.html
-wwwroot\js\main.js
-wwwroot\news.html
-wwwroot\templates\email-confirmation.html
-wwwroot\contatti.html
