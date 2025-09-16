@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Studio Legale Avv. Maria Ambrosio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <style>
+        .news-article {
+            margin-bottom: 3rem;
+        }
+        .news-img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+        }
+        .news-title {
+            color: var(--primary-red);
+            cursor: pointer;
+        }
+        .modal-header .btn-close {
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <!--#include file="navbar.html" -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-balance-scale me-2"></i>Avv. Maria Ambrosio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/competenze">Competenze</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contatti">Contatti</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/news">News</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-padding">
+        <div class="container">
+            <h1 class="section-title">News & Articoli</h1>
+            <!-- Articolo 1: immagine sinistra -->
+            <div class="row news-article align-items-center">
+                <div class="col-md-5">
+                    <img src="/images/news1.jpg" alt="Articolo 1" class="news-img">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="news-title" data-bs-toggle="modal" data-bs-target="#newsModal1">La tutela della famiglia nel diritto moderno</h3>
+                    <p>Un approfondimento sulle nuove prospettive normative e giurisprudenziali in materia di diritto di famiglia. Scopri come la legge protegge i rapporti familiari e le nuove sfide sociali.</p>
+                </div>
+            </div>
+            <!-- Articolo 2: immagine destra -->
+            <div class="row news-article align-items-center flex-row-reverse">
+                <div class="col-md-5">
+                    <img src="/images/news2.jpg" alt="Articolo 2" class="news-img">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="news-title" data-bs-toggle="modal" data-bs-target="#newsModal2">Successioni ed eredità: cosa sapere</h3>
+                    <p>Le regole fondamentali sulle successioni, la divisione ereditaria e le controversie più frequenti. Una guida pratica per affrontare serenamente il passaggio generazionale.</p>
+                </div>
+            </div>
+            <!-- Articolo 3: immagine sinistra -->
+            <div class="row news-article align-items-center">
+                <div class="col-md-5">
+                    <img src="/images/news3.jpg" alt="Articolo 3" class="news-img">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="news-title" data-bs-toggle="modal" data-bs-target="#newsModal3">Locazioni: diritti e doveri di proprietari e inquilini</h3>
+                    <p>Contratti, canoni, sfratti e risoluzioni anticipate: tutto quello che c’è da sapere per gestire al meglio una locazione abitativa o commerciale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals per articoli -->
+    <div class="modal fade" id="newsModal1" tabindex="-1" aria-labelledby="newsModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="newsModal1Label">La tutela della famiglia nel diritto moderno</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Nel diritto moderno, la tutela della famiglia si è evoluta per rispondere alle nuove esigenze sociali. Le recenti riforme hanno rafforzato la protezione dei minori, dei coniugi e delle famiglie di fatto. L’avvocato Maria Ambrosio analizza le principali novità legislative e offre consigli pratici per affrontare separazioni, affidamenti e altre questioni familiari.</p>
+            <p>La mediazione familiare, la tutela contro la violenza domestica e la regolamentazione dei rapporti patrimoniali sono solo alcune delle tematiche affrontate in questo articolo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="newsModal2" tabindex="-1" aria-labelledby="newsModal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="newsModal2Label">Successioni ed eredità: cosa sapere</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>La successione ereditaria è un momento delicato che coinvolge aspetti giuridici e personali. In questo articolo, l’avvocato Maria Ambrosio spiega le regole fondamentali per la divisione dei beni, l’impugnazione del testamento e la gestione delle controversie tra eredi.</p>
+            <p>Vengono analizzati i casi di successione legittima e testamentaria, con suggerimenti utili per evitare conflitti e tutelare i propri diritti.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="newsModal3" tabindex="-1" aria-labelledby="newsModal3Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="newsModal3Label">Locazioni: diritti e doveri di proprietari e inquilini</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>La gestione di una locazione comporta diritti e doveri sia per il proprietario che per l’inquilino. L’avvocato Maria Ambrosio illustra le principali regole sui contratti di locazione, la risoluzione anticipata, gli sfratti e la fiscalità delle locazioni.</p>
+            <p>Scopri come tutelare i tuoi interessi e risolvere le controversie in modo efficace.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <!--#include file="footer.html" -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>&copy; 2024 Studio Legale Avv. Maria Ambrosio. Tutti i diritti riservati.</p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <p>P.IVA: 12345678901 | Via T.A. Cirillo n. 43, Boscoreale (NA)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
