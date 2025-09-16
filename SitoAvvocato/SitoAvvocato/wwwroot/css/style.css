@@ -1,0 +1,343 @@
+/* Custom CSS for Professional Lawyer Website */
+
+:root {
+    --primary-red: #B22222;
+    --light-red: #DC143C;
+    --dark-red: #8B0000;
+    --white: #FFFFFF;
+    --light-gray: #F8F9FA;
+    --dark-gray: #343A40;
+    --text-gray: #6C757D;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    background-color: var(--white);
+}
+
+/* Navbar Styles */
+.navbar-custom {
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    position: relative;
+}
+
+.navbar-custom .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-red) !important;
+    font-size: 1.5rem;
+}
+
+/* Center navigation items perfectly on the page */
+.navbar-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 !important;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-nav .nav-link {
+    color: var(--dark-gray) !important;
+    font-weight: 500;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    padding: 0.5rem 0;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--primary-red) !important;
+}
+
+.social-icons {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    color: var(--dark-gray);
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-red);
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--light-gray);
+    padding: 4rem 0;
+}
+
+.hero-title {
+    color: var(--dark-gray);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    color: var(--text-gray);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-custom {
+    background-color: var(--primary-red);
+    color: var(--white);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: var(--dark-red);
+    color: var(--white);
+}
+
+/* Section Styles */
+.section-padding {
+    padding: 4rem 0;
+}
+
+.section-title {
+    color: var(--primary-red);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section-subtitle {
+    color: var(--dark-gray);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+/* Competenze Cards */
+.competenza-card {
+    background-color: var(--white);
+    border: 2px solid rgba(178, 34, 34, 0.2);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.competenza-card:hover {
+    box-shadow: 0 4px 12px rgba(178, 34, 34, 0.1);
+    border-color: rgba(178, 34, 34, 0.4);
+    transform: translateY(-2px);
+}
+
+.competenza-icon {
+    color: var(--primary-red);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.competenza-title {
+    color: var(--dark-gray);
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.competenza-description {
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+/* Contact Form */
+.form-control {
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary-red);
+    box-shadow: 0 0 0 0.2rem rgba(178, 34, 34, 0.25);
+    outline: none;
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.form-control.is-valid {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+.footer p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* Profile Image */
+.profile-img {
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Custom Popup/Modal Styles */
+.custom-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.custom-popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    transform: scale(0.7);
+    transition: transform 0.3s ease;
+}
+
+.custom-popup.show .popup-content {
+    transform: scale(1);
+}
+
+.popup-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.popup-icon.success {
+    color: #28a745;
+}
+
+.popup-icon.error {
+    color: #dc3545;
+}
+
+.popup-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--dark-gray);
+}
+
+.popup-message {
+    margin-bottom: 1.5rem;
+    color: var(--text-gray);
+    line-height: 1.5;
+}
+
+.popup-button {
+    background-color: var(--primary-red);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.popup-button:hover {
+    background-color: var(--dark-red);
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid var(--primary-red);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    /* Reset navbar positioning for mobile */
+    .navbar-nav {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    
+    .social-icons {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin-top: 1rem;
+        margin-left: 0;
+        justify-content: center;
+    }
+    
+    .profile-img {
+        max-width: 250px;
+        margin-bottom: 2rem;
+    }
+}
